@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -13,60 +14,67 @@
 
         <div>
           <label for="firstName">First name</label>
+          <br />
           <input type="text" id="firstName" name="first_name" />
         </div>
 
         <div>
           <label for="lastName">Last name</label>
+          <br />
           <input type="text" id="lastName" name="last_name" />
         </div>
 
         <div>
           <label for="email">Email</label>
+          <br />
           <input type="email" id="email" name="email_address" />
         </div>
-
-        <div>
-          <label for="status">Status</label>
-          <select id="status" name="user_status_name">
-            <option value="admin">Student</option>
-            <option value="user">Instructor</option>
-            <option value="guest">Guest</option>
-          </select>
+        <div class="status-date-container">
+          <div>
+            <label for="status">Status</label>
+            <br />
+            <select id="status" name="user_status_name">
+              <option value="admin">Student</option>
+              <option value="user">Instructor</option>
+              <option value="guest">Guest</option>
+            </select>
+          </div>
+          <div>
+            <label for="date">Date</label>
+            <br />
+            <input type="date" id="date" name="date" />
+          </div>
         </div>
         <div>
-          <p>
-            Choose your favorite programming language:
+          <p class="p--text">Choose your favorite programming language:</p>
 
-            <input type="radio" id="HTML" />
-            <label for="HTML">HTML</label>
-            <input type="radio" id="CSS" />
-            <label for="CSS">CSS</label>
-            <input type="radio" id="JavaScript" />
-            <label for="JavaScript">JavaScript</label>
-          </p>
-        </div>
-        <div>
-          <label for="date">Current Date</label>
-          <input type="date" id="date" name="date" />
+          <input type="radio" id="HTML" />
+          <label for="HTML">HTML</label>
+          <input type="radio" id="CSS" />
+          <label for="CSS">CSS</label>
+          <input type="radio" id="JavaScript" />
+          <label for="JavaScript">JavaScript</label>
         </div>
 
         <div>
           <label for="comments">Comments</label>
+          <br />
           <textarea id="comments" name="comments"></textarea>
         </div>
-        <div>
-          <input type="checkbox" id="sign-up" />
-          <label for="sign-up">Sign up for newsletter</label>
+        <div class="checkboxes">
+          <div>
+            <input type="checkbox" id="sign-up" />
+            <label for="sign-up">Sign up for newsletter</label>
+          </div>
+          <div>
+            <input type="checkbox" id="terms-and-conditions" />
+            <label for="terms-and-conditions"
+              >Agree to terms and conditions</label
+            >
+          </div>
         </div>
         <div>
-          <input type="checkbox" id="terms-and-conditions" />
-          <label for="terms-and-conditions"
-            >Agree to terms and conditions</label
-          >
-        </div>
-        <div>
-          <button type="submit">Submit</button>
+          <button class="btn-submit" type="submit">Submit</button>
         </div>
       </fieldset>
     </form>
